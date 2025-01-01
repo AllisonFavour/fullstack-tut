@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!-- <script>
+        let password;
+
+        password = Number(prompt('Enter password?'));
+
+        if (password === 8) {
+            console.log('Welcome!');
+        } else if (password < 8) {
+            console.log('Password is too short.');
+        } else if (password > 8) {
+            console.log('Password too long, password should be 8 characters')
+        } else {
+            console.log('Provide a password.')
+        }
+    </script> -->
+
+    <!-- <script>
+        let fruit = 'pear';
+        let text;
+
+        switch (fruit) {
+            case 'banana':
+                text = 'Banana is good!';
+                console.log(text);
+                break;
+            case 'orange':
+                text = 'I am not a fan of Orange';
+                console.log(text);
+                break;
+            case 'apple':
+                text = 'How you like them Apples?';
+                console.log(text);
+                break;
+            default:
+                text = 'I have never heard of that fruit';
+                console.log(text);
+                break;
+        }
+    </script> -->
+
+    <!-- <script>
+        // let name = 'Trill One';
+        // for (let i = 0; i <= 1000; i++) {
+        //     console.log(`${name} ${i}`);
+        // }
+
+        // let i = 20;
+
+        // while (i >= 10) {
+        //     console.log(name, i);
+        //     i--;
+        // }
+
+        // do {
+        //     console.log(name, i);
+        //     i++;
+        // } while(i <= 400);
+
+        // const favSingers = ['Travis Scott', 'Drake', 'Kanye West'];
+        // console.log(favSingers[0]);
+        // const favNumbers = [1, 7, 27, 100];
+
+        // const mixedArray = ['string', ['inner array', 1], 123, true];
+        // console.log(mixedArray[1][0]);
+
+        // const car = {
+        //     type: 'Mercedez Benz',
+        //     model: 'GLE',
+        //     color: 'White',
+        // };
+        // car.type = 'Toyota';
+        // car.wheels = 4;
+        // console.log(car);
+
+        // function myFunction(num1, num2) {
+        //     return num1 * num2;
+        // }
+        // console.log(myFunction(27, 7));
+
+        // function greet(name, cb) {
+        //     console.log(`Hello ${name}`);
+        //     cb(name);
+        // }
+
+        // function funcToCall(name) {
+        //     console.log('this is the callback function', 'whatsup ' + name);
+        // }
+
+        // greet('Tee', funcToCall);
+
+
+        // function showCallFunc(fn) {
+        //     const value = 10;
+        //     fn(value);
+        // }
+
+        // function fmt(value) {
+        //     console.log(value);
+        // }
+
+        // showCallFunc(fmt);
+
+        // let intervalId = setInterval(() => {
+        //     console.log('intervals');
+        // }, 3000);
+
+        // clearInterval(intervalId);
+
+        // let timeId = setTimeout(() => {
+        //     console.log('will time out after 5 seconds');
+        // }, 5000);
+        // clearTimeout(timeId);
+
+        // let intervalId = setInterval(() => {
+        //     console.log('interval ...');
+        // }, 1000);
+
+        // setTimeout(() => {
+        //     console.log('this will stop interval after 10 seconds');
+        //     clearInterval(intervalId);
+        // }, 10000); 
+
+
+//         let templateString = `
+// The quick
+// brown fox
+// jumps over
+// the lazy dog.`;
+//         console.log(templateString);
+
+//         let firstName = 'Trill';
+//         let lastName = 'Codes';
+//         console.log(`${firstName} ${lastName}`);
+
+    </script> -->
+
+
+    <!-- <script>
+        setTimeout(() => {
+            console.log('Hello 1');
+
+            setTimeout(() => {
+                console.log('Hey 2');
+
+                setTimeout(() => {
+                    console.log('Namaster 3');
+
+                    setTimeout(() => {
+                        console.log('Hi 4');
+
+                        setTimeout(() => {
+                            console.log('Bonjour 5');
+                        }, 2000);
+                    }, 2000);
+                }, 2000);
+            }, 2000);
+        }, 2000);
+    </script> -->
+
+    <!-- <script>
+        let a = 1, b = 2, c = 3;
+
+        console.log(obj = {
+            a,
+            b,
+            c,
+        });
+
+        
+        const lib = {
+            sum: (a, b) => {
+                return a + b;
+            },
+
+            mult: (a, b) => {
+                return a * b;
+            }
+        }
+        console.log(lib.sum(2,3));
+        console.log(lib.mult(2,3));
+
+        
+
+        function getPersonES6(name, age, height) {
+            return {
+                name,
+                age,
+                height,
+            }
+        }
+
+        const trill = getPersonES6('Trill One', 27, 187);
+        console.log(trill);
+
+
+        function multiply(a, b = 1) {
+            return a * b;
+        }
+        console.log(multiply())
+    </script> -->
+
+
+    <!-- <script>
+        const arr = [1, 2, 3];
+        const arr2 = [4, 5, 6];
+
+        let newArr = [...arr, ...arr2];
+        console.log(newArr);
+
+        const user = {
+            name: 'Jen',
+            age: 22,
+        }
+        const clone = {...user};
+        console.log(clone);
+    </script> -->
+
+    <!-- <script>
+        function x(...rest) {
+            console.log(rest);
+        }
+        x('1', '2', '3', true, [1, 2, 3], {name: 'tee', age: 99});
+
+
+        const colors = ['red', 'green', 'blue', 'orange'];
+
+        const [color1, color2, color3] = colors;
+        console.log(color1);
+        console.log(color2);
+        console.log(color3);
+
+
+        const person = {
+            name: 'Johnny Cash',
+            age: 30,
+            gender: 'male',
+            country: 'USA',
+        }
+
+        const {name : personName, age: personAge, country: personCountry} = person;
+        console.log(personName);
+        console.log(personAge);
+        console.log(personCountry);
+    </script> -->
+
+
+
+    <!-- <script>
+        let money = false;
+
+        let res = money ? 'Buy product': 'Bring money';
+        console.log(res);
+    </script> -->
+
+
+    <!-- <script>
+        // const obj = {a: 1, b: 2, c: 3};
+
+        // for (let keys in obj) {
+        //     console.log(`${keys}: ${obj[keys]}`);
+        // }
+
+
+        // const array1 = ['a', 'b', 'c'];
+        // for (const item of array1) {
+        //     console.log(item);
+        // }
+
+        // const numbers = [1, 5, 10, 15, 20];
+
+        // let sum = 0;
+
+        // function adder(num) {
+        //     sum += num;
+        // }
+
+        // numbers.forEach(adder);
+        // console.log(sum);
+
+
+        // let randomNum = [1, 2, 3, 6, 9, 21, 33];
+
+        // function multiply(num) {
+        //     return num * 10;
+        // }
+
+        // let multBy10 = randomNum.map(multiply);
+        // console.log(randomNum);
+        // console.log(multBy10);
+
+
+        // const ages = [32, 33, 16, 40];
+
+        // console.log(ages.filter((age) => age > 18));
+
+        // const words = [
+        //     'spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'
+        // ];
+
+        // function checkLength(word) {
+        //     return word.length > 6 ? word : '';
+        // }
+
+        // let result = words.filter(checkLength);
+        // console.log(result);
+
+        // const ages2 = [3, 10, 18, 20];
+
+        // let adult = ages2.find((age) => age > 18);
+        // console.log(adult);
+
+        // let products = [
+        //     {name: 'Checkers', category: 'Toys'},
+        //     {name: 'Harry Potter', category: 'Books'},
+        //     {name: 'iPhone', category: 'Electronics'},
+        //     {name: 'Learn PHP', category: 'Books'},
+        // ];
+
+        // let product = products.filter(product => product.category === 'Books');
+        // console.log(product);
+
+        // let everyRes = products.every(product => product.category === 'Books');
+        // let someRes = products.some(product => product.category === 'Books');
+        // console.log(everyRes);
+        // console.log(someRes);
+
+        // const words = [
+        //     'apple',
+        //     'banana',
+        //     'orange',
+        //     'banana',
+        //     'apple',
+        //     'orange',
+        //     'apple',
+        //     'grape'
+        // ];
+
+        // const wordFrequency = words.reduce((p, word) => {
+        //     p[word] = p[word] || 0 + 1;
+        //     return p;
+        // }, {});
+        // console.log(wordFrequency);
+
+        // const wordFrequency = words.reduce((frequencyMap, word) => {
+        //     frequencyMap[word] = frequencyMap[word] || 0 + 1;
+        //     return frequencyMap;
+        // });
+
+
+
+        // const numbers = [2, 3, 4, 5];
+
+        // function calculateProduct(numbers) {
+        //     return numbers.reduce((p, c) => p * c, 1);
+        // }
+
+        // const product = calculateProduct(numbers);
+        // console.log(product);
+
+
+                // const words = ['hello', 'cello', 'pun', 'fun', 'grab', 'telephone', 'gamble'];
+
+        // function capWords(arr) {
+        //     arr.forEach((word, index, array) => {
+        //         array[index] = word[0].toUpperCase() + word.substring(1);
+        //     });
+        // }
+        // let capWords = words.forEach((word, i, arr) => {
+        //     arr[i] = word[0].toUpperCase() + word.substring(1);
+        // });
+
+        // console.log(words);
+
+    </script> -->
+
+
+    <!-- <script>
+        // let map = new Map();
+
+        // const a = 'a';
+        // const b = 'b';
+        // const c = 'c';
+
+        // map.set(a, 1);
+        // map.set(b, 2);
+        // map.set(c, 3);
+
+        // console.log(map.get(a));
+        // console.log(map.size);
+        // console.log(map.delete(b));
+        // console.log(map, map.size);
+
+
+        // let lists = ['a', 'b', 'c'];
+        // const letters = new Set(lists);
+        // // set.add('a', 'b', 'c');
+        // console.log(letters);
+
+        // for (let char of letters) {
+        //     console.log(char);
+        // }
+
+
+        const symbol = Symbol();
+
+        // console.log(typeof symbol);
+
+        let trills = {
+            name: 'trill one',
+            age: 20,
+        };
+        trills[Symbol('foo')] = 'naso';
+
+        console.log(trills);
+
+        for (let key in trills) {
+            console.log(key);
+        }
+
+    </script> -->
+
+</body>
+</html>

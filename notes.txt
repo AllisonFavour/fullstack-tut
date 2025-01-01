@@ -1,0 +1,233 @@
+What is Javascript
+Javascript is a versatile and widely used programming language that plays a crucial role in web development. It enables developers to create interactive and dynamic elements within web pages enhancing the user experience by adding functionality that responds to the user actions.
+Javascript is primarily executed in web browser, but its also used in other environments like server-side scripting through Node.js
+
+Variables: used as a container in memory to store data-types/values.
+
+Primitive Data Type
+1. Number: used to represent integer values and floating point number
+
+We can perform mathematical operations on number data-type.
+Arithmetic operations like addition '+' , subtraction '-', division '/', multiplication '*', modulo (remainder after a division) '%', exponential '**'
+increment and decrement operator (adds by 1) ++,(subtract by 1) --
+
+2. Booleans: booleans are represented by true or false, in some cases 0 (off) or 1 (on).
+
+truthy and falsy values related to boolean
+true, 1, object {}, array []
+false, undefined, null, empty quotes( '', "", `` ), -0, 0, NaN
+
+Comparison Operators
+comparison operators either return true or false after operating on the values or operands
+Relational operators
+greater than >
+less than <
+greater than or less than >=
+less than or equal than <=
+Equality operators
+loosely equal to == (checks for value and also does type coercion)
+strictly equal to === (ensure for value and data type to be strictly the same and does NOT do type coercion)
+not equal to ! (negates true to be false and false to be true)
+loosely NOT equal to != (does not check for value and also does type coercion)
+strictly NOT equal to !== (does check for strictly equal value and data type and does not do type coercion)
+
+3. Strings this is used to represent a character or set of characters also known as text
+single quote 'single quotes string'
+double quotes "double quotes"
+backtick quotes `backtick quotes` 
+
+Type conversion
+we can convert some data type like string to another data type like number
+to check for a type of value or data type, we make use of the keyword 'typeof'
+
+ways to convert string to number
++'1' - using the plus symbol immediately
+Number() - known as the number constructor, it takes a string of either integer characters or decimals and converts it to the number type.
+parseInt() - this takes a string representation of number and coverts it to the number type.
+parseFloat() - works the same way as parseInt, but the difference is, it converts string of number characters with a decimal.
+
+ways to convert number to string
+String() - the string constructor is used to convert number to string
+toString() - this method is used to convert number to string as well
+
+
+Control Flow
+In every programming language there are certain ways to control the flow of the program and that includes
+if statement
+else statement
+else-if statement
+switch statement
+while loop
+do while loop
+
+Logical Operators
+Logical AND && - returns TRUE only if both operands/boolean values are TRUE, else it evaluates to FALSE
+Logical OR || - returns TRUE if either of the operands/boolean values are TRUE, it only evaluates to FALSE when both operands/boolean values are FALSE 
+Logical NOT ! - inversely returns the opposite of the either the operands/boolean value. NOT TRUE results to False and NOT FALSE results to TRUE.
+
+Array
+array is a data structure which we use in storing a list of elements and arrays is zero based which means the first element in the list is 0.
+we can access an element in the array using the bracket notation with the number index inside the bracket
+
+
+Array methods
+concat() - joins two or more arrays and return a result
+includes() - checks if an array contains a specified element
+push() - add a new element to the end of an array and returns the new length of the array
+unshift() - adds a new element to the beginning of the array and returns the new length of the array
+pop() - removes the last element of an array and returns the removed element
+shift() - removes the first element in an array and returns the removed element
+sort() - sorts the elements alphabetically and in ascending order
+slice() - select a part of the array and the return the new array
+splice() - removes or replaces existing elements and/or adds new elements
+
+
+Object
+object is another data structure that allows us to store a collection of data and it store as a key-value pair. The key stands as a label to the value which can be of any data type including arrays and objects
+we can access properties in an object using dot or bracket notation
+
+Function
+a function is a block of code that performs some specific task
+functions make the code reusable, you can declare it once and use it multiple times
+functions makes the code easier as each small tasks is divided into different functions
+function increases readability
+function encourages the DRY (Dont Repeat Yourself) principle
+
+types of function
+function declaration - this enables hoisting which means it can be called or executed before initialization
+function nameOfFunction() { }
+
+function expression - this can not be called before initialization because it will lead to reference error
+const newFunction = function () { }
+
+arrow function
+const arrowFunction = () => { }
+
+Callback Function
+when we provide a function as an argument to a function, that function passed as the argument is known as a callback function
+
+Scopes
+scopes in javascript refers to the current context of code, which determines the accessibility of variables to javascript
+
+Two types of Scopes
+Local Scopes - this are variables declared inside a block of code, a block of code in mostly in curly braces
+Global Scopes - this are variables declared outside a block of code
+
+JSON
+javascript object notation commonly known as JSON is a lightweight data interchange format that is easy for humans to read and write and also for machine to parse and generate
+JSON is mostly used in transferring data betweem applications and servers
+
+ways to work with JSON
+JSON.stringify() - this is used to convert a regular javascript object to a JSON string format
+JSON.parse() - this is used to convert a JSON string format to a javascript object
+
+setInterval(function, timeInMilliseconds);
+this is built-in function used to repeat and execute a block of code at a specified interval
+
+setTimeOut(function, timeInMilliseconds)
+this is also a built-in function used to execute a function or a block of code after a specified length
+
+
+More on Template Strings as known as Template Literals
+Template strings also know as template literals are a feature in javascript that allows us to create strings with embedded expressions. They are denoted by backticks `` instead of single or double quotes.
+template strings provide a more flexible and concise way to construct strings, especially when they involve variables or expression. Embedding expressions in backticks is commonly known as interpolation
+
+Arrow Function
+Arrow function also known as fat arrow function, are a concise and shorter way to declare functions in Javascript.
+They were introduced in the ECMAscript 6 (ES6) and provide a more compact syntax compared to traditional function expression.
+
+Enhanced Object Literals, introduced in ECMAscript 6 (ES6), are a set of enhancement to the syntax for defining objects in javascript. These enhancements made it more convenient and concise to define object  properties and methods. (shorthand method)
+
+Default functions parameters, introduced ECMAscript 6 (ES6), allow you to assign default values to function parameters. When a function is called and an argument is not provided for the respective parameter, the default value will used instead. This feature makes it easier to handle cases where argument might be missing or undefined.
+
+Spread operator
+the spread operator is a new addition to the set of operators in Javascript ES6 
+It takes in an iterable (e.g array) and expand it into individual elements
+The spread operator is used to make a shallow copies of JS objects
+Using this operator makes our code more concise and enhances its readability
+
+Rest operator
+The rest parameter syntax allows a function to accept an indefinite number of arguments
+as an array, providing a way to represent variadic functions in Javascript
+
+Destructuring
+Destructuring allows us to unpack values from data structures (arrays, objects) into seperate distinct variable
+In object destructuring order doesnt matter but the name does matter
+
+
+Ternary Operator
+The ternary operator in javascript is a concise way of writing conditional expressions. It is the only javascript operator that takes three operand: a condition followed by a question mark (?), an expression to execute if the condition is true followed by a colon (:), and an expression to execute if the condition is false
+// condition ? expIfTrue : expIfFalse;
+
+
+The for-in loop
+the for-in loop in javascript is used to iterate over the enumerable properties of an object. It is a way to loop through the keys (property names) of an object.
+// for (let key in object) { }
+
+
+The for-of loop
+The for-of loop in javascript is a modern iteration statement introduced in ECMAscript 6 (ES6) that provides a concise and easy way to loop over elements in iterable objects like arrays, strings, maps, sets etc. It allows you to iterate directly over the values of the elements, rather than dealing with their indices or keys, which makes the code more readable and less error-prone
+// for (variable of iterable) { }
+
+
+Array helpers
+forEach() - when we call forEach() helper we pass in anonymous callback function, this function gets called one time for every element in the array
+whatever is inside the function, that logic happens
+
+map() - the map method creates a new array populated with the results of calling a provided function on every element in the calling array.
+
+filter() - the filter method is a built-in array method in Javascript that allows you to create a new array containing elements that pass a certain condition. it provides a clean and concise way to filter out elements from an array based on based on a specific criteria
+
+find() - the find method is another built-in array helper in javascript that allows you to find the first element in an array that matches a specific condition. It returns the value of the first element that satisifes the given testing function or undefined if no element is found
+
+The every() and some() methods in javascript that allows you to check the elements of an array based on a given condition. Both methods takes a callback function as an argument, which is applied to each element of the array 
+
+every() - the every method tests whether all elements in the array pass the condition specified by the provided callback function. it return true if the callback function returns true for every element and false if any element fails the condition.
+
+some() - the some method tests whether at least one element in the array passes the condition specified by the provided callback function. it returns true if the callback function returns true for at least one element and false if no element passes the condition
+
+reduce() - the reduce method applies the reducer function to each element of an array, accumulating the result into a single value. it is often used to perform calculations or aggregations on array element and simplify the array into a single value
+
+
+/*
+        const words = [
+            'apple',
+            'banana',
+            'orange',
+            'banana',
+            'apple',
+            'orange',
+            'apple',
+            'grape'
+        ];
+
+        const wordFrequency = words.reduce((p, word) => {
+            p[word] = p[word] || 0 + 1;
+            return p;
+        }, {});
+        console.log(wordFrequency);
+*/
+
+More on data structure
+Map is a built-in data structure introduced in ES6 that allows you to store key-value pairs where both the keys and values can be of any data type. It is similar to an object but with a few key differences
+--> keys can be of any data type: unlike objects, where key are limited to strings and symbols. Map allows you to use any data type as keys including numbers, booleans, objects and even other map instances
+--> maintains insertion order: map preserves the order of key-value pairs as they were inserted, while object keys may not be guranteed to be in a specific order
+--> Iteration: map provides built-in methods for iteration over its elements
+
+Set is a built-in data structure introduced in ES6 that represents a collection of unique values, unlike arrays, set allows you store only unique values, which means duplicate values are automatically removed. Each value can occur only once within a set 
+--> set objects are useful when you need to store a list of unique elements and quickly check for the existence of a specific value 
+
+
+More on data type
+symbol - this is a unique and immutable data type introduced in ECMAscript 6 (ES6). A symbol is often used as an identifier for object properties to avoid potential naming conflict
+--> unlike strings or numbers symbols are guaranteed to be unique. when you create a symbol, it is unique and can not be recreated or changed. this uniqueness ensures that symbols will not collide with other property names, even if they had the same string representation 
+
+
+DOM
+DOM - this stands for Document Object Model
+--> when a web page is loaded, the browser creates a document object model of the page
+
+Events in DOM
+What is an Event?
+Javascript interaction with HTML is handled through events that occur when the user or browser manipulates a page. 
+When the page loads it is called an event. When the user clicks a button, that click too is an event
