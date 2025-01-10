@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice tween with GSAP</title>
+
+    <style>
+        body {
+            background-color: #1b1b1b;
+            height: 100vh;
+        }
+
+        .nav {
+            height: 10vh;
+            border-bottom: 1px solid white;
+            position: relative;
+        }
+
+        .box {
+            color: hsl(0, 100%, 71%);
+            position: absolute;
+            top: -30px;
+            left: 40px;
+        }
+
+        @media (max-width: 700px) {
+            .nav {
+                position: relative;
+            }
+
+            .box {
+                position: absolute;
+                top: -40px;
+                left: 20px;
+            }        
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="box">
+            Trill Spot
+        </div>
+    </nav>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script>
+        gsap.to('.box', {
+            y: 60,
+            duration: 1,
+            repeat: 0
+        })
+    </script>
+</body>
+</html>

@@ -231,3 +231,35 @@ Events in DOM
 What is an Event?
 Javascript interaction with HTML is handled through events that occur when the user or browser manipulates a page. 
 When the page loads it is called an event. When the user clicks a button, that click too is an event
+
+/*
+------------------------------------------------------------------------------------------------------------
+Animation
+GSAP
+The GSAP object serves as an accesspoint to most of GSAP functionalities.
+Its a generic object with various properties and methods that creates and control Tweens and Timelines.
+e.g gsap.method(element, vars object)
+
+Tweens
+A tween is just a single moment in animation
+
+Set method
+It is used to preset some propertise ahead of the animation
+
+from and fromTo methods
+from - in from method we dont need to specify the initial state, (it will figure it out by itself)
+fromTo - you have to specify the default value and also the new animation state
+
+Staggers
+
+Controlling Tweens
+
+Timelines
+A timeline is a powerful sequencing tool that act as a container for tweens and other timelines, making it simple to control them as a whole and precisely manage their timing. Without timelines, building complex sequences would be far more cumbersome because you'd need to use a delay for every animation.
+-----------------------------------------------------------------------------------------------------------
+*/
+
+Object Oriented Programming (O.O.P)
+Object Oriented Programming is a programming language model / style organized around objects rather than actions and data rather than logic
+
+11:36:03

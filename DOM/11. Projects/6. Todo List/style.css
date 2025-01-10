@@ -4,14 +4,14 @@
     box-sizing: border-box;
 }
 
-body {
+/* body {
     background-color: #ec5766;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-
+} */
+/* 
 .container {
     width: 400px;
     background-color: #fff;
@@ -42,4 +42,4 @@ input {
 .delete {
     color: #d91e36;
     cursor: pointer;
-}
+} */
