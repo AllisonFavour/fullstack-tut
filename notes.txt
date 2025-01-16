@@ -262,4 +262,119 @@ A timeline is a powerful sequencing tool that act as a container for tweens and 
 Object Oriented Programming (O.O.P)
 Object Oriented Programming is a programming language model / style organized around objects rather than actions and data rather than logic
 
-11:36:03
+Javascript is a versatile and dynamic programming language that supports multiple paradigms, including procedural, functional and object oriented programming. While Javascript is not a purely object oriented language like Java or C++, it provides the tools and features to implement OOP concepts effectively.
+
+OOP in Javascript refers to the practice of designing and structuring code around objects and their interactions. It is a programming paradigm that allows developers to model real-world entities and their relationships using objects and classes.
+
+keyword This
+The javascript This keyword refers to the object it belongs to. It has different value depending on where it is used.
+In a method - this refers to the owner object
+Alone - this refers to the global object
+In a function - this refers to the global object
+
+
+Factory Function
+A factory function is a type of function that is used to create and return object. Its a design pattern that provides an alternative way to create objects compared to using constructors and the 'new' keyword.
+
+Constructor Function
+Constructor function in Javascript are regular functions used with the new keyword to create and initialize objects with shared properties and methods. They act as blueprint for creating multiple instances of objects with the same structure and behavior.
+
+new keyword
+1. first create empty object {}
+2. sets 'this' to point to that object
+3. we can omit the return statement using the 'new' keyword
+
+
+Built-in Constructors
+Also known as native constructors, are standard constructors provided by Javascript that allows you to create objects of various data types. These constuctors are available globally and do not need to be explicitly defined. They provide a convenient way to create instances of primitive data types and built-in objects.
+
+
+Object.create()
+The Object.create() method creates a new object, using an existing object as the prototype of the newly created object.
+
+Prototype
+Every javascript object has an anonymous property called prototype
+// remember functions and arrays are also an object
+That prototype will be the parent of that object, prototype property is object by itself, which have some special properties and methods.
+
+// Every object is associated with another object
+// The object (a) is associated with [[Prototype]] object 
+// -> which means a object will inherit all properties of Object.prototype || [[Prototype]]
+
+We can check the prototype of objects or something in 3 ways
+---> obj.__proto__
+---> obj.constructor.prototype
+---> object.getPrototypeOf(a)
+
+
+Prototypal Inheritance
+This is a mechanism in Javascript that allows objects to inherit properties and methods from other objects. It is a fundamental concept in the language and is based on the prototype model. In prototypal inheritance, objects can serve as prototypes for other objects, forming a hierachical chain of inheritance.
+
+// In Javascript, every object has an internal property called [[Prototype]] (often referred to as __proto__), which points to its prototype object. When you access a property or method on an object, and that property or method is not found in the object itself, javascript looks for it in the object prototype (and further up in the prototype chain, if needed) until it finds the property or reaches the top of the prototype chain, which is usually the Object.prototype 
+
+
+Classes
+Classes are one of the features introduced in the ES6 version of Javascript.
+// A class is blueprint for the object. You can create an object from the class
+// You can think of the class as a sketch (prototype) of a house. It contains all the details about the floors, doors, windows etc. Based on these descriptions you build the house.
+// Since many houses can be made from the same description, we can create many objects from a class.
+
+Modifiers
+Class modifiers, also known as access modifiers or visibility modifiers, are keywords in OOP that define the visibility and accessibility of class members (fields, methods and nested classes) from other parts of the program. They control the level of encapsulation and help enforce encapsulation principles by restricting direct access to certain class members.
+
+In javascript class modifiers are used in the context of classes and objects, although javascript does not have traditional access modifiers like some other object-oriented language like (e.g Java). However you can achieve similar effect using different conventions and techniques.
+
+
+/*
+    OOP
+    Encapsulaion
+    Abstraction
+    Inheritance
+    Polymorphism
+*/
+Encapsulaion - is the concept of bundling data (properties) and methods (functions) together within an object, allowing the object to control access to its internal data and behavior. This helps to hide implementation details and expose only necessary interface to interact with the object. In Javascript, you can achieve encapsulation by using closures, symbols or naming conventions to simulate private members and expose public interfaces.
+
+Abstraction - is the process of simplifying complex systems by breaking them down into smaller, manageable parts. It allows you to focus on the essential features of an object and hide unneccesary details. In javascript, you can use abstract classes to define abstract structures and then implement them in concrete objects.
+
+Inheritance - allows a class to (subclass) to inherit properties and methods from another class (superclass). This enables code reuse and the creation of hierachical relationships between classes. In Javascript, inheritance can be achieved through prototype-based inheritance (before ES6) or using ES6 classes (with the extends keyword)
+
+Polymorphism - allows objects to be treated as instances of their parent class, even if they are instances of a subclass. This facilitates writing code that works with different types of objects in a generic way. 
+In javascript, polymorphism is achieved through method overriding, where a subclass provides its own implementation of a method that is already defined in the parent class. The code can then use the same method to work with both parent and subclass instances.
+
+
+
+Synchronous and Asynchronous
+
+Synchronous javascript refers to the traditional way of executing javascript code, where each operation is performed in a sequential and blocking manner. In other words, each line of code is executed one after the other, and the program will wait for each operation to finish before moving onto the next one. If an operation takes a long time to complete, it can potentially slow down the entire applicaiton, making it less responsive.
+
+Asynchronous javascript allows certain operations to be executed indepently from the main program flow, so they dont block the execution of other tasks. This is typically achieved using techniques like callbacks, promises and async/await, which allow developers to handle asynchronous operations more efficiently.
+
+Callback
+
+Promises - A promise is an object representing the eventual completion or failure of an asynchronous operations.
+new Promise() - A javascript promise object contains both the producing code and calls the consuming code it can be used to deal with asynchronous operation in Javascript.
+A promise has 3 states
+* Pending - initial state, not yet fulfilled or rejected
+* Fulfilled / Resolved - promise completed 
+* Rejected - promise failed
+Promise syntax
+new Promise ((resolve, reject) => { 
+    // async code
+    resolve(value);
+    reject(error);
+} )
+.then() - is a method used to handle the successful outcome of a promise Javascript. 
+ it takes two arguments: (onFulfilled, onRejectedd)
+. catch() - the catch() method returns a Promise and deals with rejected case only
+
+
+Async/Await
+Async function?
+Async is a special function that is designed to operate asynchronously, meaning it can perform tasks in the background while other code continues to execute. Async functions are marked with the async keyword.
+Async keyword - this is a keyword used to turn function declaration to async function.
+Await - the await operator is used to wait for a Promise. It can only be used inside an async function within regular Javascript code.
+
+
+
+TRY AND CATCH
+In Javascript, try and catch are keywords used to implement error handling. Error handling is essential when writing code to gracefully handle unexpected errors and exceptions that may occur during program execution. The try and catch block works together to enable developers to catch and handle errors, preventing them from crashing the entire application.
